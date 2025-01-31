@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { toast} from 'sonner';
-import {db} from '@/service/firebaseconfig'
+import { db } from '@/service/firebaseconfig';
 import {doc,getDoc} from 'firebase/firestore';
 import InfoSection from '../components/InfoSection';
 import Hotels from '../components/Hotels';
