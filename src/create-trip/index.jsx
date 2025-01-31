@@ -123,9 +123,10 @@ function CreateTrip() {
     })
   }
   return (
+
     <div className='sm:px-10 md:px-32 lg:px-56 xl:px-10 px-5 mt-10'>
-    <h2 className='font-bold text-3xl text-center'>Tell us your travel preferences</h2>
-    <p className='mt-3 text-gray-500 text-xl text-center'> Just provide some basic information,and our trip planner will generate a customized iterinary based on preferences</p>
+    <h2 className='font-bold text-4xl text-center'>Tell us your travel preferences</h2>
+    <p className='mt-3 text-black text-xl text-center'> Just provide some basic information,and our trip planner will generate a customized iterinary based on preferences</p>
     <div className='mt-10 flex flex-col gap-9'>
       <div>
       <h2 className='text-xl my-3 font-medium'>🏕️Whats your destination choice</h2>
@@ -151,11 +152,11 @@ function CreateTrip() {
           <h2 className='font-bold text-lg'>{item.title}</h2>
           <h2 className="text-sm text-gray-500">{item.desc}</h2>
         </div>
-      ))}
+      ))} 
       </div>
 
 
-      </div> */}
+      </div>  */}
       <div>
         <h2 className='text-xl my-3 font-medium'>🔂How many days are you planning your trip</h2>
         <Input placeholder={'Ex.3'} type='number'
@@ -173,12 +174,12 @@ function CreateTrip() {
          `}>
           <h2 className='text-4xl'>{item.icon}</h2>
           <h2 className='font-bold text-lg'>{item.title}</h2>
-          <h2 className="text-sm text-gray-500">{item.desc}</h2>
+          <h2 className="text-sm text-black">{item.desc}</h2>
         </div>
       ))}
       <div>
         <h2 className='text-xl my-3 font-medium'>Who do you plan on traveling with on your next adventure?</h2>
-        <div className='grid grid-cols-2 gap-4 mt-5'>
+        <div className='grid grid-cols-2 gap-5 mt-5'>
         {SelectTravelList.map((item ,index)=>( 
         <div key={index}
         onClick={()=>handleInputChange('traveler',item.people)}
@@ -186,15 +187,16 @@ function CreateTrip() {
            ${formData?.traveler==item.people&&'shadow-lg border-black'}`}>
           <h2 className='text-4xl'>{item.icon}</h2>
           <h2 className='font-bold text-lg'>{item.title}</h2>
-          <h2 className="text-sm text-gray-500">{item.desc}</h2>
+          <h2 className="text-sm text-black">{item.desc}</h2>
         </div>
         ))}
         </div>
       </div>
     </div>
-       <div className='my-10 justify-end flex'><Button disabled={loading} onClick={OnGenerateTrip}>
+    <br></br>
+       <div className='my-10 justify-start flex'><Button disabled={loading} onClick={OnGenerateTrip}>
         {loading?
-        <AiOutlineLoading3Quarters className='h-7 w-7 animate-spin'/> : 'Generate Trip'}
+        <AiOutlineLoading3Quarters className='h-7 w-7 animate-spin '/> : 'Generate Trip'}
         </Button>
     </div>
     {/* <div className="absolute left-0 bottom-0 w-24 h-24 animation-float">

@@ -54,7 +54,7 @@ function InfoSection({trip}) {
         </div>
         <div className='flex gap-5'>
         <h2 className= 'p-1 px-3 bg-gray-200 rounded-full text-gray-500 text-xs md:text-md'>🗓️{trip?.userSelection?.noOfDays} Day</h2>
-        {/* //{ <h2 className='p-1 px-3 bg-gray-200 rounded-full text-gray-500 text-xs md:text-md'>🛞Transport:{trip?.userSelection?.transport}</h2> } */}
+        {/* { <h2 className='p-1 px-3 bg-gray-200 rounded-full text-gray-500 text-xs md:text-md'>🛞Transport:{trip?.userSelection?.transport}</h2> } */}
         <h2 className='p-1 px-3 bg-gray-200 rounded-full text-gray-500 text-xs md:text-md'>👩‍👧‍👦 Number of Traveler : {trip?.userSelection?.traveler} </h2>
         <h2 className='p-1 px-3 bg-gray-200 rounded-full text-gray-500 text-xs md:text-md'>💵 {trip?.userSelection?.budget} Budget </h2>
         </div>

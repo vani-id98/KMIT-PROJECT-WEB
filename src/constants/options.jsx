@@ -37,7 +37,7 @@ export const SelectTravelList=[
     {
         id:3,
         title:'Family',
-        desc:"A group of fun loving adv",
+        desc:"A group of fun loving people",
         icon:'🏡',
         people:'3 to 5 people',
     },
@@ -72,6 +72,7 @@ export const SelectTravelList=[
 //         icon:'🛫'
 
 //     }
+// ]
 
 
 

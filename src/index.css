@@ -136,3 +136,21 @@ button:focus-visible {
   }
 }
 
+/* @layer utilities {
+  .bg-travel-image {
+    background-image: url('/ai3.jpg')
+  }
+} */
+
+ .background-image { 
+  background-image: url('/ai9.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350vh;
+  width: 150vh;
+}  
+
+
+
+
